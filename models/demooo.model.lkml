@@ -92,7 +92,7 @@ explore: order_items {
 
 }
 explore: distribution_centers1{
-  from: distribution_centers
+  from: order_items
   join: users1 {
     from: users
     sql_on: ${users1.id}=${distribution_centers1.id} ;;
